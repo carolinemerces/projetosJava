@@ -18,10 +18,9 @@ public class ValorD {
 		System.out.print("Digite o valor de C: ");
 		c = ler.nextInt();
 		r = (a+b);
-		//Math.pow(r, p);
-		r = r*r;
+		r = Math.pow(r, 2);
 		s = (b+c);
-		s = s*s;
+		s = Math.pow(s, 2);
 		d = ((r+s)/2);
 		System.out.println("O valor de D é: "+d);
 		
