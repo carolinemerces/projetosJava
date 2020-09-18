@@ -1,0 +1,66 @@
+package entidades;
+
+import java.util.List;
+
+public abstract class ContaBancaria {
+	private int numeroDaConta;
+	private double Saldo;
+	private List<Integer> transacoes;
+	
+	
+	public ContaBancaria() {
+		super();
+	}
+
+
+
+	public ContaBancaria(int numeroDaConta, double saldo, List<Integer> transacoes) {
+		super();
+		this.numeroDaConta = numeroDaConta;
+		Saldo = saldo;
+		this.transacoes = transacoes;
+	}
+
+	
+	
+	public int getNumeroDaConta() {
+		return numeroDaConta;
+	}
+
+
+
+	public void setNumeroDaConta(int numeroDaConta) {
+		this.numeroDaConta = numeroDaConta;
+	}
+
+
+
+	public double getSaldo() {
+		return Saldo;
+	}
+
+
+	public List<Integer> getTransacoes() {
+		return transacoes;
+	}
+
+
+
+	public void setTransacoes(List<Integer> transacoes) {
+		this.transacoes = transacoes;
+	}
+
+
+
+	public void emiteExtrato() {
+		
+	}
+	
+	public double credite() {
+		return 0;
+	}
+	
+	public double debite() {
+		return 0;
+	}
+}

@@ -1,0 +1,39 @@
+package entidades;
+
+import java.util.List;
+
+public class ContaEspecial extends ContaCorrente{
+	
+	private double limite = 5000;
+
+	public ContaEspecial() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public ContaEspecial(int numeroDaConta, double saldo, List<Integer> transacoes) {
+		super(numeroDaConta, saldo, transacoes);
+		// TODO Auto-generated constructor stub
+	}
+
+	public ContaEspecial(double limite) {
+		super();
+		this.limite = limite;
+	}
+
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	
+	public double calculaJuros() {
+		
+		
+		
+		return 0;
+	}
+
+}
